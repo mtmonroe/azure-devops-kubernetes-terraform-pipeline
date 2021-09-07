@@ -33,8 +33,9 @@ stages:
     environment: QA
     strategy:
       runOnce:
-        steps:
-        - scripts: echo deploy to Dev
+        deploy:
+          steps:
+          - scripts: echo deploy to Dev
 steps:
 - script: echo Running on $(operatingSystem)
   displayName: 'Run a one-line script'
