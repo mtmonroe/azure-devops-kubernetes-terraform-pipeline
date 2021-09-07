@@ -24,8 +24,9 @@ stages:
     environment: Dev
     strategy:
       runOnce:
-        steps:
-        - scripts: echo deploy to Dev
+        deploy:
+          steps:
+          - scripts: echo deploy to Dev
 - stage: QADeploy
   jobs:
   - deployment: QADeployJob
