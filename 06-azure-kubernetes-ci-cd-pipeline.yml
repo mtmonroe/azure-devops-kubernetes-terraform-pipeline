@@ -24,7 +24,7 @@ stages:
     - task: Docker@2
       displayName: Build an image
       inputs:
-        containerRegistry: 'mtmonroe-docker-hub'
+        containerRegistry: 'Docker-Connection'
         repository: 'mtmonroe/currency-exchange-devops'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
