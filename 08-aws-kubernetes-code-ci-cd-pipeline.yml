@@ -35,7 +35,6 @@ stages:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
         ArtifactName: 'manifests'
         publishLocation: 'Container'
-stages:
 - stage: Deploy
   displayName: Deploy image
   jobs:
